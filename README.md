@@ -75,6 +75,19 @@ This prints a `localhost` link (usually `http://localhost:5173/`). Open it in yo
 
 Tap **Get started** on the splash screen, then explore the **Summary**, **Goals**, **Chat**, and **Profile** tabs. The Chat tab only works while the agent (Terminal 1) is running.
 
+## Texting the agent (Photon integration)
+
+Sprout's assistant is also reachable through a real messaging interface via [Photon's Spectrum SDK](https://photon.codes) — same agent, same live data, no separate account needed for this demo (it uses Spectrum's credential-free terminal provider).
+
+In a third terminal:
+
+```
+cd sprout-agent
+node photon.js
+```
+
+Type a question — e.g. "how much did I spend on groceries?" — and hit enter. It replies the same way it would over iMessage/SMS/WhatsApp, since it's built on Spectrum's unified messaging primitives; only the provider (terminal vs. a real phone line) would change in a production deploy.
+
 ## Notes
 
 - All financial data is seeded/demo data (`Sprout/src/data.js`) — this isn't connected to a real bank yet.
