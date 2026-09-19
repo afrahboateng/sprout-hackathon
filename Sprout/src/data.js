@@ -1,4 +1,4 @@
-import { COLORS } from "./theme";
+import { COLORS } from "./theme.js";
 
 export const ACCOUNTS = [
   { id: "all", name: "All accounts" },
